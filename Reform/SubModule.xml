@@ -1,0 +1,26 @@
+<Module>
+  <Name value="Reform"/>
+  <Id value="Reform"/>
+  <Version value="v1.0.0"/>
+  <SingleplayerModule value="true"/>
+  <MultiplayerModule value="false"/>
+  <DependedModules>
+    <DependedModule Id="Native"/>
+    <DependedModule Id="SandBoxCore"/>
+    <DependedModule Id="Sandbox"/>
+    <DependedModule Id="CustomBattle"/>
+    <DependedModule Id="StoryMode" />
+  </DependedModules>
+  <SubModules>
+    <SubModule>
+      <Name value="Reform"/>
+      <DLLName value="Reform.dll"/>
+      <SubModuleClassType value="Reform.Main"/>
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+  </SubModules>
+  <Xmls/>
+</Module>
