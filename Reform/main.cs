@@ -10,12 +10,6 @@ namespace Reform
 		protected override void OnSubModuleLoad()
 		{
 			base.OnSubModuleLoad();
-
-			//Module.CurrentModule.AddInitialStateOption(new InitialStateOption(
-			//  "TestReformOption", new TextObject("Click Me", null), 9990, () => {
-			//    InformationManager.DisplayMessage(
-			//      new InformationMessage("HelloWorld"));
-			//  }, false));
 			FileLog.Log("Reform module loaded.");
 		}
 
