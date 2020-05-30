@@ -491,13 +491,13 @@ namespace Reform
 		{
 			ItemCategory item_category = GetItemCategory(__instance, item_category_name);
 			if (item_category == null) {
-				FileLog.Log("Unable to find item category: " + item_category_name);
+				// FileLog.Log("Unable to find item category: " + item_category_name);
 				return;
 			}
 			MethodInfo method_info = GetInitializeObjectMethod(item_category);
 			if (method_info == null) {
-				FileLog.Log("Unable to find `InitializeObject` on item category: " +
-						item_category_name);
+				//FileLog.Log("Unable to find `InitializeObject` on item category: " +
+				// item_category_name);
 				return;
 			}
 			method_info.Invoke(item_category, properties);
@@ -505,7 +505,7 @@ namespace Reform
 
 		public static void Postfix(DefaultItemCategories __instance)
 		{
-			FileLog.Log("Rebalancing tradable goods.");
+			//FileLog.Log("Rebalancing tradable goods.");
 			RebalanceItems(__instance, DefaultItemCategoryConfigs(__instance));
 
 			// The following item categories are not modified.

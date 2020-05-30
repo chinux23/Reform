@@ -42,7 +42,7 @@ namespace Reform
 				ref BuildingType ____buildingDailyIrrigation)
 		{
 			DefaultSettlementFoodModel.FoodStocksUpperLimit = 700;
-			FileLog.Log("Rebalance buildings.");
+			// FileLog.Log("Rebalance buildings.");
 
 			// City
 
@@ -51,8 +51,8 @@ namespace Reform
 					new TextObject("{=dIM6xa2O}Better fortifications and higher walls around town, also increases the max garrison limit since it provides more space for the resident troops."),
 					new int[] { 10000, 20000, 40000 },
 					BuildingLocation.Settlement,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-										new Tuple<BuildingEffectEnum, int, int, int
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+										new Tuple<BuildingEffectEnum, float, float, float
 										>(BuildingEffectEnum.GarrisonCapacity, 50, 100, 200)
 					},
 					0);
@@ -62,8 +62,8 @@ namespace Reform
 					new TextObject("{=DHm1MBsj}Logding for the garrisoned troops. Each level increases garrison capacity of the stronghold."),
 					new int[] { 5000, 10000, 20000 },
 					BuildingLocation.Settlement,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-										new Tuple<BuildingEffectEnum, int, int, int
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+										new Tuple<BuildingEffectEnum, float, float, float
 										>(BuildingEffectEnum.GarrisonCapacity, 50, 100, 200)
 					},
 					0);
@@ -73,8 +73,8 @@ namespace Reform
 					new TextObject("{=otWlERkc}A field for military drills that increase the daily experience gain of all garrisoned units."),
 					new int[] { 5000, 10000, 20000 },
 					BuildingLocation.Settlement,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-										 new Tuple<BuildingEffectEnum, int, int, int
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+										 new Tuple<BuildingEffectEnum, float, float, float
 										 >(BuildingEffectEnum.Experience, 10, 20, 40)
 					},
 					0);
@@ -84,8 +84,8 @@ namespace Reform
 					new TextObject("{=0B91pZ2R}A permanent space that hosts fairs. Citizens can gather, drink dance and socialize,  increasing the daily morale of the settlement."),
 					new int[] { 5000, 10000, 20000 },
 					BuildingLocation.Settlement,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-										 new Tuple<BuildingEffectEnum, int, int, int
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+										 new Tuple<BuildingEffectEnum, float, float, float
 										 >(BuildingEffectEnum.Loyalty, 1, 2, 4)
 					},
 					0);
@@ -95,8 +95,8 @@ namespace Reform
 					new TextObject("{=Z9LWA6A3}Scheduled market days lure folks from surrounding villages to the settlement. Goods are sold for lumpful coins and of course the local ruler takes a handsome cut. Increases wealth and tax yield of the settlement."),
 					new int[] { 5000, 10000, 20000 },
 					BuildingLocation.Settlement,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-										 new Tuple<BuildingEffectEnum, int, int, int
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+										 new Tuple<BuildingEffectEnum, float, float, float
 										 >(BuildingEffectEnum.Tax, 25, 50, 100)
 					},
 					0);
@@ -106,10 +106,10 @@ namespace Reform
 					new TextObject("{=UojHRjdG}Access to clean water provides room for growth with healthy citizens and a clean infrastructure. Increases daily Prosperity change."),
 					new int[] { 5000, 10000, 20000 },
 					 BuildingLocation.Settlement,
-					 new Tuple<BuildingEffectEnum, int, int, int>[] {
-										 new Tuple<BuildingEffectEnum, int, int, int
+					 new Tuple<BuildingEffectEnum, float, float, float>[] {
+										 new Tuple<BuildingEffectEnum, float, float, float
 										 >(BuildingEffectEnum.Prosperity, 1, 2, 3),
-										 new Tuple<BuildingEffectEnum, int, int, int
+										 new Tuple<BuildingEffectEnum, float, float, float
 										 >(BuildingEffectEnum.FoodProduction, 5, 10, 15)
 					 },
 					 0);
@@ -120,8 +120,8 @@ namespace Reform
 							null),
 					new int[] { 5000, 10000, 20000 },
 					BuildingLocation.Settlement,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-										 new Tuple<BuildingEffectEnum, int, int, int
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+										 new Tuple<BuildingEffectEnum, float, float, float
 										 >(BuildingEffectEnum.Influence, 1, 2, 3)
 					},
 					0);
@@ -132,8 +132,8 @@ namespace Reform
 							null),
 					new int[] { 5000, 10000, 20000 },
 					BuildingLocation.Settlement,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-										 new Tuple<BuildingEffectEnum, int, int, int
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+										 new Tuple<BuildingEffectEnum, float, float, float
 										 >(BuildingEffectEnum.Foodstock, 250, 600, 1050)
 					},
 					0);
@@ -144,8 +144,8 @@ namespace Reform
 							null),
 					new int[] { 5000, 10000, 20000 },
 					BuildingLocation.Settlement,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-										 new Tuple<BuildingEffectEnum, int, int, int
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+										 new Tuple<BuildingEffectEnum, float, float, float
 										 >(BuildingEffectEnum.Militia, 2, 4, 6)
 					},
 					0);
@@ -156,9 +156,9 @@ namespace Reform
 							null),
 					new int[] { 5000, 10000, 20000 },
 					BuildingLocation.Settlement,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-						new Tuple<BuildingEffectEnum, int, int, int>(BuildingEffectEnum.WallRepairSpeed, 12, 25, 50),
-						new Tuple<BuildingEffectEnum, int, int, int>(BuildingEffectEnum.SiegeEngineSpeed, 0, 25, 50)
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+						new Tuple<BuildingEffectEnum, float, float, float>(BuildingEffectEnum.WallRepairSpeed, 12, 25, 50),
+						new Tuple<BuildingEffectEnum, float, float, float>(BuildingEffectEnum.SiegeEngineSpeed, 0, 25, 50)
 					},
 					0);
 
@@ -168,9 +168,9 @@ namespace Reform
 							null),
 					new int[] { 5000, 10000, 20000 },
 					BuildingLocation.Settlement,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-						new Tuple<BuildingEffectEnum, int, int, int>(BuildingEffectEnum.FoodProduction, 5, 10, 20),
-						new Tuple<BuildingEffectEnum, int, int, int>(BuildingEffectEnum.VillageDevelopmentDaily, 20, 40, 70),
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+						new Tuple<BuildingEffectEnum, float, float, float>(BuildingEffectEnum.FoodProduction, 5, 10, 20),
+						new Tuple<BuildingEffectEnum, float, float, float>(BuildingEffectEnum.VillageDevelopmentDaily, 20, 40, 70),
 					},
 					0);
 
@@ -180,8 +180,8 @@ namespace Reform
 					null),
 				new int[] { 5000, 10000, 20000 },
 				BuildingLocation.Settlement,
-				new Tuple<BuildingEffectEnum, int, int, int>[] {
-						new Tuple<BuildingEffectEnum, int, int, int>(BuildingEffectEnum.FoodProduction, 10, 20, 30),
+				new Tuple<BuildingEffectEnum, float, float, float>[] {
+						new Tuple<BuildingEffectEnum, float, float, float>(BuildingEffectEnum.FoodProduction, 10, 20, 30),
 				},
 				0);
 
@@ -193,8 +193,8 @@ namespace Reform
 							null),
 					new int[] { 5000, 10000, 20000 },
 					BuildingLocation.Castle,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-										 new Tuple<BuildingEffectEnum, int, int, int
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+										 new Tuple<BuildingEffectEnum, float, float, float
 										 >(BuildingEffectEnum.GarrisonCapacity, 25, 50, 100)
 					},
 					1);
@@ -206,8 +206,8 @@ namespace Reform
 							null),
 					new int[] { 5000, 10000, 20000 },
 					 BuildingLocation.Castle,
-					 new Tuple<BuildingEffectEnum, int, int, int>[] {
-										 new Tuple<BuildingEffectEnum, int, int, int
+					 new Tuple<BuildingEffectEnum, float, float, float>[] {
+										 new Tuple<BuildingEffectEnum, float, float, float
 										 >(BuildingEffectEnum.GarrisonCapacity, 50, 75, 100)
 					 },
 					 0);
@@ -218,8 +218,8 @@ namespace Reform
 							null),
 					new int[] { 5000, 10000, 20000 },
 					BuildingLocation.Castle,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-										 new Tuple<BuildingEffectEnum, int, int, int
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+										 new Tuple<BuildingEffectEnum, float, float, float
 										 >(BuildingEffectEnum.Experience, 10, 20, 40)
 					},
 					0);
@@ -230,8 +230,8 @@ namespace Reform
 							null),
 					new int[] { 5000, 10000, 20000 },
 					BuildingLocation.Castle,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-										 new Tuple<BuildingEffectEnum, int, int, int
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+										 new Tuple<BuildingEffectEnum, float, float, float
 										 >(BuildingEffectEnum.Foodstock, 250, 600, 1050)
 					},
 					0);
@@ -242,8 +242,8 @@ namespace Reform
 							null),
 					new int[] { 5000, 10000, 20000 },
 					BuildingLocation.Castle,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-										 new Tuple<BuildingEffectEnum, int, int, int
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+										 new Tuple<BuildingEffectEnum, float, float, float
 										 >(BuildingEffectEnum.FoodProduction, 5, 10, 20)
 					},
 					0);
@@ -255,10 +255,10 @@ namespace Reform
 							null),
 					new int[] { 5000, 10000, 20000 },
 					BuildingLocation.Castle,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-										 new Tuple<BuildingEffectEnum, int, int, int
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+										 new Tuple<BuildingEffectEnum, float, float, float
 										 >(BuildingEffectEnum.ReduceMilitia, 50, 50, 50),
-										 new Tuple<BuildingEffectEnum, int, int, int
+										 new Tuple<BuildingEffectEnum, float, float, float
 										 >(BuildingEffectEnum.Militia, 1, 1, 2)
 					},
 					0);
@@ -269,8 +269,8 @@ namespace Reform
 							null),
 					new int[] { 5000, 10000, 20000 },
 					BuildingLocation.Castle,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-										 new Tuple<BuildingEffectEnum, int, int, int
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+										 new Tuple<BuildingEffectEnum, float, float, float
 										 >(BuildingEffectEnum.Construction, 1, 2, 3)
 					},
 					0);
@@ -281,8 +281,8 @@ namespace Reform
 							null),
 					new int[] { 5000, 10000, 20000 },
 					BuildingLocation.Castle,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-										 new Tuple<BuildingEffectEnum, int, int, int
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+										 new Tuple<BuildingEffectEnum, float, float, float
 										 >(BuildingEffectEnum.Loyalty, 1, 2, 4)
 					},
 					0);
@@ -293,10 +293,10 @@ namespace Reform
 							null),
 					new int[] { 5000, 10000, 20000 },
 					BuildingLocation.Castle,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-										 new Tuple<BuildingEffectEnum, int, int, int
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+										 new Tuple<BuildingEffectEnum, float, float, float
 										 >(BuildingEffectEnum.WallRepairSpeed, 50, 50, 50),
-										 new Tuple<BuildingEffectEnum, int, int, int
+										 new Tuple<BuildingEffectEnum, float, float, float
 										 >(BuildingEffectEnum.SiegeEngineSpeed, 0, 25, 50)
 					},
 					0);
@@ -307,8 +307,8 @@ namespace Reform
 							null),
 					new int[] { 5000, 10000, 20000 },
 					BuildingLocation.Castle,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-										 new Tuple<BuildingEffectEnum, int, int, int
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+										 new Tuple<BuildingEffectEnum, float, float, float
 										 >(BuildingEffectEnum.Militia, 2, 4, 6)
 					},
 					0);
@@ -319,9 +319,9 @@ namespace Reform
 							null),
 					new int[] { 5000, 10000, 20000 },
 					BuildingLocation.Castle,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-						new Tuple<BuildingEffectEnum, int, int, int>(BuildingEffectEnum.VillageDevelopmentDaily, 5, 10, 15),
-						new Tuple<BuildingEffectEnum, int, int, int>(BuildingEffectEnum.FoodProduction, 5, 10, 15)
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+						new Tuple<BuildingEffectEnum, float, float, float>(BuildingEffectEnum.VillageDevelopmentDaily, 5, 10, 15),
+						new Tuple<BuildingEffectEnum, float, float, float>(BuildingEffectEnum.FoodProduction, 5, 10, 15)
 					},
 					0);
 
@@ -333,9 +333,9 @@ namespace Reform
 						null),
 					new int[3],
 					BuildingLocation.Daily,
-					new Tuple<BuildingEffectEnum, int, int, int>[] {
-						new Tuple<BuildingEffectEnum, int, int, int>(BuildingEffectEnum.VillageDevelopmentDaily, 20, 40, 70),
-						new Tuple<BuildingEffectEnum, int, int, int>(BuildingEffectEnum.FoodProduction, 10, 20, 30)
+					new Tuple<BuildingEffectEnum, float, float, float>[] {
+						new Tuple<BuildingEffectEnum, float, float, float>(BuildingEffectEnum.VillageDevelopmentDaily, 20, 40, 70),
+						new Tuple<BuildingEffectEnum, float, float, float>(BuildingEffectEnum.FoodProduction, 10, 20, 30)
 					},
 					0);
 		}

@@ -10,7 +10,7 @@ namespace Reform
 		protected override void OnSubModuleLoad()
 		{
 			base.OnSubModuleLoad();
-			FileLog.Log("Reform module loaded.");
+			// FileLog.Log("Reform module loaded.");
 		}
 
 		protected override void OnBeforeInitialModuleScreenSetAsRoot()
