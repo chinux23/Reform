@@ -62,6 +62,7 @@
     <Compile Include="BuildingRebalanc.cs" />
     <Compile Include="TradableGoodRebalance.cs" />
     <Compile Include="ItemValueFixes.cs" />
+    <Compile Include="DefaultSettlementFoodModelRebalance.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
