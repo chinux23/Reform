@@ -15,11 +15,14 @@ namespace Reform
     public static void Postfix(WeaponComponent weaponComponent, ref float __result)
     {
       WeaponComponentData weaponComponentData = weaponComponent.PrimaryWeapon;
-      if (weaponComponentData.WeaponClass == WeaponClass.Javelin) {
-        if (__result > 0) {
+      if (weaponComponentData.WeaponClass == WeaponClass.Javelin ||
+        weaponComponentData.WeaponClass == WeaponClass.TwoHandedAxe ||
+        weaponComponentData.WeaponClass == WeaponClass.TwoHandedSword ||
+        weaponComponentData.WeaponClass == WeaponClass.TwoHandedPolearm) {
+        if (__result > 3) {
           // Javelie price is extradinarily high with high smithing skills.
           // Use sqrt to smooth the curve.
-          __result = (float)Math.Sqrt(__result);
+          __result = 3 + (float)Math.Sqrt(__result - 3);
         }
       }
     }
