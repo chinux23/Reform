@@ -28,6 +28,7 @@
   <ItemGroup>
     <None Include="SubModule.xml" />
     <None Include="packages.config" />
+    <None Include="ReadMe.md" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="TaleWorlds.Core">
